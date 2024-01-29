@@ -10,10 +10,11 @@
 >
   <OrbitControls
     autoRotate
-    enableZoom={false}
+    enableZoom={true}
     enableDamping
-    autoRotateSpeed={0.5}
+    autoRotateSpeed={0.9}
     target.y={1.5}
+    target.x={0.5}
   />
 </T.PerspectiveCamera>
 
@@ -22,7 +23,7 @@
   position.x={5}
   position.y={10}
 />
-<T.AmbientLight intensity={0.2} />
+<T.AmbientLight intensity={0.3} />
 
 <Grid
   position.y={-0.001}
@@ -76,6 +77,6 @@
     rotation={[-5, 128, 10]}
   >
     <T.IcosahedronGeometry />
-    <T.MeshStandardMaterial color="#F8EBCE" />
+    <T.MeshStandardMaterial color="#F8ACC1" />
   </T.Mesh>
 </Float>
